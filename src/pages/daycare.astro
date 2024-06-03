@@ -1,150 +1,155 @@
 ---
-import Navbar from "../layouts/Navbar.astro"
-import Footer from "../layouts/Footer.astro"
+import Navbar from "../layouts/Navbar.astro";
+import Footer from "../layouts/Footer.astro";
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Responsive Daycare Page</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-</head>
-<body >
-<Navbar />
-<div class="bg-blue-100">
-    <!-- Hero Image -->
-    <div class="relative h-screen bg-cover bg-center max-h-96" style="background-image: url('img/4-heros.png');">
-    </div>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <Navbar />
+    <div class="bg-blue-100">
+      <!-- Hero Image -->
+      <div class="relative h-screen bg-cover bg-center max-h-96" style="background-image: url('img/4-heros.png');"></div>
 
-    <div class="container mx-auto py-8">
+      <div class="container mx-auto py-8">
         <div class="deskripsi pt-20">
-            <div class="flex flex-col md:flex-row justify-center md:items-end space-y-4 md:space-y-0 md:space-x-4 gap-5 pb-16">
-                <h1 class="font-sans text-slate-800 font-extrabold text-6xl text-left ml-5">
-                    Daycare & <br> Grooming
-                </h1>
-                <img src="img/CatPaw.svg" alt="CatPaw" class="self-start md:self-end ml-5">
-                <p style="max-width: 600px;" class="text-left self-start md:self-end font-bold max-w-96 ml-5">
-                    Selamat datang di Daycare dan Grooming Joy Cat, tempat di mana kucing Anda akan mendapatkan perawatan dan perhatian terbaik saat Anda tidak berada di rumah. Kami menawarkan berbagai paket layanan yang dapat disesuaikan dengan kebutuhan Anda dan kucing kesayangan Anda.
+          <div class="flex flex-col md:flex-row justify-center md:items-end space-y-4 md:space-y-0 md:space-x-4 gap-5 pb-16">
+            <h1 class="font-sans text-slate-800 font-extrabold text-6xl text-left ml-5">
+              Daycare & <br /> Grooming
+            </h1>
+            <img src="img/CatPaw.svg" alt="CatPaw" class="self-start md:self-end ml-5" />
+            <p style="max-width: 600px;" class="text-left self-start md:self-end font-bold max-w-96 ml-5">
+              Selamat datang di Daycare dan Grooming Joy Cat, tempat di mana kucing Anda akan mendapatkan perawatan dan perhatian terbaik saat Anda tidak berada di rumah. Kami menawarkan berbagai
+              paket layanan yang dapat disesuaikan dengan kebutuhan Anda dan kucing kesayangan Anda.
+            </p>
+          </div>
+
+          <!-- Daycare Description Section -->
+          <div class="flex flex-col md:flex-row items-center p-8 bg-blue-100 rounded-lg">
+            <!-- Left Side: Image -->
+            <div class="w-full md:w-1/3 p-2 lg:ml-48">
+              <img src="img/groom-1.png" alt="Description of image" class="w-full h-auto rounded-lg shadow-lg" />
+            </div>
+
+            <!-- Right Side: Paragraph -->
+            <div class="w-full md:w-1/2 p-4">
+              <h2 class="text-3xl font-bold mb-4">Cat Daycare</h2>
+              <div>
+                <p class="text-lg">
+                  Butuh tempat yang aman dan nyaman untuk menitipkan kucing Anda? Daycare kami menyediakan lingkungan yang aman, bersih, dan penuh kasih sayang. Kucing Anda akan diawasi oleh staf
+                  profesional yang berpengalaman.
                 </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Pricing Section -->
+          <div class="pt-16 mx-5">
+            <h2 class="text-3xl font-bold text-center pb-5">Paket Daycare</h2>
+            <div class="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-4">
+              <!-- Left Card -->
+              <div class="bg-white rounded-lg shadow-lg p-6 w-full md:w-1/2 lg:w-1/3 flex flex-col justify-between">
+                <div>
+                  <h2 class="text-2xl font-bold mb-2">Daycare Sehari Penuh</h2>
+                  <p class="text-3xl font-bold text-gray-800 mb-4">Rp200.000</p>
+                  <div class="px-"><hr /></div>
+                  <ul class="list-disc ml-5 text-gray-700">
+                    <li>Durasi minimal 6 jam sampai dengan 24 jam</li>
+                    <li>Makanan, minuman, mainan, tempat istirahat, dan sesi bermain</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Right Card -->
+              <div class="bg-white rounded-lg shadow-lg p-6 w-full md:w-1/2 lg:w-1/3 flex flex-col justify-between">
+                <div>
+                  <h2 class="text-2xl font-bold mb-2">Daycare Pekanan</h2>
+                  <p class="text-3xl font-bold text-gray-800 mb-4">Rp950.000</p>
+                  <div><hr /></div>
+                  <ul class="list-disc ml-5 text-gray-700">
+                    <li>Durasi full 1 pekan</li>
+                    <li>Makanan, minuman, mainan, tempat istirahat, sesi bermain, dan pemeriksaan kesehatan ringan setiap hari</li>
+                  </ul>
+                </div>
+              </div>
             </div>
 
-            <!-- Daycare Description Section -->
-            <div class="flex flex-col md:flex-row items-center p-8 bg-blue-100 rounded-lg">
-                <!-- Left Side: Image -->
-                <div class="w-full md:w-1/3 p-2 lg:ml-48">
-                    <img src="img/groom-1.png" alt="Description of image" class="w-full h-auto rounded-lg shadow-lg">
-                </div>
-                
-                <!-- Right Side: Paragraph -->
-                <div class="w-full md:w-1/2 p-4">
-                    <h2 class="text-3xl font-bold mb-4">Cat Daycare</h2>
-                    <div>
-                    <p class="text-lg">
-                        Butuh tempat yang aman dan nyaman untuk menitipkan kucing Anda? Daycare kami menyediakan lingkungan yang aman, bersih, dan penuh kasih sayang. Kucing Anda akan diawasi oleh staf profesional yang berpengalaman.
-                    </p></div>
-                </div>
+            <!-- Reserve Now Button -->
+            <div class="flex justify-center pt-8">
+              <a
+                href="https://wa.me/0812345678910"
+                style="border-radius: 100px;"
+                href="#"
+                class="bg-green-500 hover:bg-green-600 text-white py-3 flex items-center justify-center w-full lg:w-2/3 transition duration-300"
+              >
+                <img class="pr-1" src="img/Group.svg" alt="wa" />
+                Reserve Now
+              </a>
             </div>
-
-            <!-- Pricing Section -->
-            <div class="pt-16">
-                <h2 class="text-3xl font-bold text-center sm:text-start pb-5">Paket Daycare</h2>
-                <div class="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-4">
-                    <!-- Left Card -->
-                    <div class="bg-white rounded-lg shadow-lg p-6 w-full md:w-1/2 lg:w-1/3 flex flex-col justify-between">
-                        <div>
-                            <h2 class="text-2xl font-bold mb-2">Daycare Sehari Penuh</h2>
-                            <p class="text-3xl font-bold text-gray-800 mb-4">Rp200.000</p>
-                            <div class="px-"><hr></div>
-                            <ul class="list-disc ml-5 text-gray-700">
-                                <li>Durasi minimal 6 jam sampai dengan 24 jam</li>
-                                <li>Makanan, minuman, mainan, tempat istirahat, dan sesi bermain</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <!-- Right Card -->
-                    <div class="bg-white rounded-lg shadow-lg p-6 w-full md:w-1/2 lg:w-1/3 flex flex-col justify-between">
-                        <div>
-                            <h2 class="text-2xl font-bold mb-2">Daycare Pekanan</h2>
-                            <p class="text-3xl font-bold text-gray-800 mb-4">Rp950.000</p>
-                            <div><hr></div>
-                            <ul class="list-disc ml-5 text-gray-700">
-                                <li>Durasi full 1 pekan</li>
-                                <li>Makanan, minuman, mainan, tempat istirahat, sesi bermain, dan pemeriksaan kesehatan ringan setiap hari</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Reserve Now Button -->
-                <div class="flex justify-center pt-8">
-                    <a href="https://wa.me/0812345678910" style="border-radius: 100px;" href="#" class="bg-green-500 hover:bg-green-600 text-white py-3 flex items-center justify-center w-full lg:w-2/3 transition duration-300">
-                        <img class="pr-1" src="img/Group.svg" alt="wa">
-                        Reserve Now
-                    </a>
-                </div>
-            </div>
+          </div>
         </div>
+      </div>
     </div>
+  </body>
+
+  <div class="container mx-auto bg-white px-96"></div>
+  <!-- Daycare Description Section -->
+  <div class="flex flex-col md:flex-row items-center p-8 bg-white rounded-lg mb-10 px-70">
+    <div class="w-full md:w-1/2 p-4 md:px-20 lg:px-32 xl:px-52 2xl:px-72">
+      <h2 class="text-3xl font-bold mb-4">Cat Grooming</h2>
+      <p class="text-lg">
+        Layanan grooming kami mencakup berbagai perawatan untuk menjaga kebersihan dan kesehatan bulu kucing Anda. Kami menggunakan produk yang aman dan teknik yang tepat untuk memastikan kucing Anda
+        merasa nyaman selama perawatan.
+      </p>
     </div>
-</div>
 
-<div class="container mx-auto bg-white px-96">
+    <!-- Right Side: Paragraph -->
+    <div class="w-full md:w-1/3 p-2 lg:ml-10">
+      <img src="img/groom-2.png" alt="Description of image" class="w-full h-auto rounded-lg shadow-lg" />
+    </div>
+  </div>
+  <div class="pt-16 mx-5">
+    <h2 class="text-3xl font-bold text-center mb-8">Paket Grooming</h2>
+    <div class="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-4">
+      <!-- Left Card -->
+      <div class="bg-white rounded-lg shadow-lg p-6 w-full md:w-1/2 lg:w-1/3 flex flex-col justify-between">
+        <div>
+          <h2 class="text-2xl font-bold mb-2">Basic</h2>
+          <p class="text-3xl font-bold text-gray-800 mb-4">Rp150.000</p>
+          <div class="px-"><hr /></div>
+          <ul class="list-disc ml-5 text-gray-700">
+            <li>Mandi, pengeringan, penyikatan bulu, pemotongan kuku, pembersihan telinga</li>
+          </ul>
+        </div>
+      </div>
 
-</div>
- <!-- Daycare Description Section -->
-            <div class="flex flex-col md:flex-row items-center p-8 bg-white rounded-lg mb-10 px-70">
-                <div class="w-full md:w-1/2 p-4 md:px-20 lg:px-32 xl:px-52 2xl:px-72">
-                    <h2 class="text-3xl font-bold mb-4">Cat Grooming</h2>
-                    <p class="text-lg">
-                        Layanan grooming kami mencakup berbagai perawatan untuk menjaga kebersihan dan kesehatan bulu kucing Anda. Kami menggunakan produk yang aman dan teknik yang tepat untuk memastikan kucing Anda merasa nyaman selama perawatan.
-                    </p>
-                </div>
-
-                 <!-- Right Side: Paragraph -->
-                <div class="w-full md:w-1/3 p-2 lg:ml-10">
-                    <img src="img/groom-2.png" alt="Description of image" class="w-full h-auto rounded-lg shadow-lg">
-                </div>
-            </div>
-            <div class="pt-16">
-                <h2 class="text-3xl font-bold text-center mb-8">Paket Grooming</h2>
-                <div class="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-4">
-                    <!-- Left Card -->
-                    <div class="bg-white rounded-lg shadow-lg p-6 w-full md:w-1/2 lg:w-1/3 flex flex-col justify-between">
-                        <div>
-                            <h2 class="text-2xl font-bold mb-2">Basic</h2>
-                            <p class="text-3xl font-bold text-gray-800 mb-4">Rp150.000</p>
-                            <div class="px-"><hr></div>
-                            <ul class="list-disc ml-5 text-gray-700">
-                                <li>Mandi, pengeringan, penyikatan bulu, pemotongan kuku, pembersihan telinga</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <!-- Right Card -->
-                    <div class="bg-white rounded-lg shadow-lg p-6 w-full md:w-1/2 lg:w-1/3 flex flex-col justify-between">
-                        <div>
-                            <h2 class="text-2xl font-bold mb-2">Complete</h2>
-                            <p class="text-3xl font-bold text-gray-800 mb-4">Rp250.000</p>
-                            <div><hr></div>
-                            <ul class="list-disc ml-5 text-gray-700">
-                                <li>Mandi, pengeringan, penyikatan bulu, pemotongan kuku, pembersihan telinga, pemotongan bulu (jika diperlukan), dan pengharum bulu</li>
-                            </ul>
-                        </div>
-
-                        
-                    </div>
-                </div><div class="flex justify-center pt-8 mb-20">
-                            <a href="https://wa.me/0812345678910" style="border-radius: 100px;" class="bg-green-500 hover:bg-green-600 text-white py-3 flex items-center justify-center w-full lg:w-2/3 transition duration-300">
-                                <img class="pr-1" src="img/Group.svg" alt="wa">
-                                Reserve Now
-                            </a>
-                        </div>
-            </div>
-        
-</div>
-<Footer />
-</body>
+      <!-- Right Card -->
+      <div class="bg-white rounded-lg shadow-lg p-6 w-full md:w-1/2 lg:w-1/3 flex flex-col justify-between">
+        <div>
+          <h2 class="text-2xl font-bold mb-2">Complete</h2>
+          <p class="text-3xl font-bold text-gray-800 mb-4">Rp250.000</p>
+          <div><hr /></div>
+          <ul class="list-disc ml-5 text-gray-700">
+            <li>Mandi, pengeringan, penyikatan bulu, pemotongan kuku, pembersihan telinga, pemotongan bulu (jika diperlukan), dan pengharum bulu</li>
+          </ul>
+        </div>
+      </div>
+    </div><div class="flex justify-center pt-8 mb-20">
+      <a
+        href="https://wa.me/0812345678910"
+        style="border-radius: 100px;"
+        class="bg-green-500 hover:bg-green-600 text-white py-3 flex items-center justify-center w-full lg:w-2/3 transition duration-300"
+      >
+        <img class="pr-1" src="img/Group.svg" alt="wa" />
+        Reserve Now
+      </a>
+    </div>
+  </div>
 </html>
+<Footer />
