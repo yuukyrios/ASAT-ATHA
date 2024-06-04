@@ -10,8 +10,11 @@ import Footer from "../layouts/Footer.astro";
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Responsive Daycare Page</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+      </style>
   </head>
-  <body>
+  <body class="font-['barlow']">
     <Navbar />
     <div class="bg-[#edf8f9]">
       <!-- Hero Image -->
@@ -20,7 +23,7 @@ import Footer from "../layouts/Footer.astro";
       <div class="container mx-auto py-8">
         <div class="deskripsi pt-20">
           <div class="flex flex-col md:flex-row justify-center md:items-end space-y-4 md:space-y-0 md:space-x-4 gap-5 pb-16">
-            <h1 class="font-sans text-[#2E5070] font-extrabold text-6xl text-left ml-5">
+            <h1 class="text-[#2E5070] font-extrabold text-6xl text-left ml-5">
               Daycare & <br /> Grooming
             </h1>
             <img src="img/CatPaw.svg" alt="CatPaw" class="self-start md:self-end ml-5" />
@@ -86,7 +89,7 @@ import Footer from "../layouts/Footer.astro";
                 href="https://wa.me/0812345678910"
                 style="border-radius: 100px;"
                 href="#"
-                class="bg-green-500 hover:bg-green-600 text-white py-3 flex items-center justify-center w-full lg:w-2/3 transition duration-300"
+                class="bg-[#95BB6F] hover:bg-[#67834c] text-white py-3 flex items-center justify-center w-full lg:w-2/3 transition duration-300"
               >
                 <img class="pr-1" src="img/Group.svg" alt="wa" />
                 Reserve Now
@@ -144,7 +147,7 @@ import Footer from "../layouts/Footer.astro";
       <a
         href="https://wa.me/0812345678910"
         style="border-radius: 100px;"
-        class="bg-green-500 hover:bg-green-600 text-white py-3 flex items-center justify-center w-full lg:w-2/3 transition duration-300"
+        class="bg-[#95BB6F] hover:bg-[#67834c] text-white py-3 flex items-center justify-center w-full lg:w-2/3 transition duration-300"
       >
         <img class="pr-1" src="img/Group.svg" alt="wa" />
         Reserve Now
